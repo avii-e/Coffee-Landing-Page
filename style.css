@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@600&family=Playfair+Display:wght@700&display=swap');
+
+:root{
+    --main-color:#deab5f;
+    --primary-color:#312e2e;
+
+}
+/* Utility styles */
+button{
+    padding: 10px 30px;
+    background-color: var(--main-color);
+    border: none;
+    cursor: pointer;
+}
+/* Resets */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background: #100e0f;
+}
+
+/* Nav */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-family: sans-serif;
+    padding-top: 15px;
+}
+li{
+    display: inline;
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 40px;
+    padding-bottom: 10px;
+}
+li a:hover{
+    border-bottom: 2px solid var(--main-color);
+}
+/* Nav End */
+
+/* Header start  */
+.header{
+    background: url("images/pexels-nao-triponez-129207.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+    color: #fff;
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.main-headings{
+    position: absolute;
+    top: 7rem;
+    font-size: 4rem;
+    word-spacing: 10px;
+}
+.primary-heading{
+    position: absolute;
+    bottom: 4rem;
+    font-size: 4rem;
+    word-spacing: 10px;
+    margin-bottom: -40px;
+
+}
+.main-btn{
+    position: absolute;
+    bottom: 2rem;
+    pad: 10px 30px;
+    margin-top: 20px;
+    background:transparent;
+    background: var(--main-color);
+    transform: translateY(60px);
+}
+/* Our story starts */
+#our-story{
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+/* .image-container {
+    height: 100vh;
+    width: 100vh;
+} */
+.img{
+    width: 400px;
+    height: 400px;
+    background: url(images/_Pngtree_coffee_3713036-removebg-preview.png);
+    background-position: center; 
+    background-size: cover;
+}
+
+.title-style{
+    display: flex;
+    align-items: center;
+}
+.title{
+    font-family:'Playfair Display', serif ;
+    font-size: 4rem;
+    color:#fff;
+    transform: translateX(-100px);
+}
+.line{
+    width: 100px;
+    height: 2px;
+    background:#fff;
+    transform: translateX(-120px);
+}
+.section-content p{
+    max-width: 500px;
+    color: #fff;
+    font-family: sans-serif;
+    line-height: 20px;
+    margin: 20px 0px;
+}
+/* Our story End */
+.content-section p{
+    max-width: 500px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    color: #fff;
+}
+.coffee-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.img-2{
+    width: 400px;
+    height: 400px;
+    mix-blend-mode: color-;
+}
+.title-two{
+    font-size: 3rem;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+}
+
+
+/* Products */
+products{
+    margin-top: 5rem;
+
+}
+.title-three{
+    font-size: 4rem;
+    margin-top: 10rem;
+    margin-left:  10rem;
+    margin-bottom:  10rem;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+    border: 2px solid var(--main-color);
+    padding: 0px 20px;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 4rem;
+}
+.card-img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -60px;
+    /* border: 2px solid var(--main-color); */
+}
+.img-one{
+    background: url(images/—Pngtree—espresso\ bean\ coffee\ cup_7107857.png);
+    background-position: center;
+    background-size: cover;
+}
+.img-two{
+    background: url(images/—Pngtree—espresso\ bean\ coffee\ cup_7107857.png);
+    background-position: center;
+    background-size: cover;
+}
+.img-three{
+    background: url(images/—Pngtree—espresso\ bean\ coffee\ cup_7107857.png);
+    background-position: center;
+    background-size: cover;
+}
+.card-title{
+    color: #fff;
+    font-family: sans-serif;
+    margin-top: 50px;
+
+}
+.items p{
+    color: #fff;
+    margin: 20px 0px;
+    font-family: serif;
+}
+
+footer{
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: sans-serif;
+}
+footer .container{
+    margin: 20px;
+    max-width: 400px;
+    text-align: center;
+}
+footer .heading-info{
+    margin-bottom: 20px;
+
+}
+footer p{
+    line-height: 25px;
+}
+span{
+    color: var(--main-color);
+}
+
+.Copyright{
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
